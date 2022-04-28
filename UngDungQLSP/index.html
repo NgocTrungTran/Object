@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UD Quan Ly San Pham</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div>
+                <h4>Add New Product</h4>
+            </div>
+            <div class="add">
+                <input type="text" id="namePro" class="input" onkeydown="pressEnter(event)">
+                <button class="btn" onclick="addProduct()">Add</button>
+            </div>
+            <div>
+                <h4>Display All Product</h4>
+            </div>
+        </div>
+        <div class="row" style="display: flex">
+            <input type="search" id="keywork" class="form-control" oninput="fromKeyboar(event)">
+        </div>
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            <span style="color: blue; cursor: pointer;" title="Ascending" onclick="ascending()">&#x25B2;</span>
+                            Product Name
+                            <span style="color: blue; cursor: pointer;" title="Descending" onclick="descending()">&#x25BC;</span>
+                        </th>
+                        <th id="countProduct"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                <td>${product}</td>
+                <td><button class="btn" onclick="editProduct(${index})">Edit</button></td>
+                <td><button class="btn" onclick="deleteProduct(${index})">Delete</button></td>
+            </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div id="editProduct" class="edit-product d-none">
+                <label for="new_ProductName">Edit product</label>
+                <input type="text" class="form-control" id="new_ProductName" name="new_ProductName">
+                <button id="btnUpdate" class="btn">Update</button>
+                <button class="btn" onclick="clearEdit()">Cancel</button>              
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="oj.js"></script>

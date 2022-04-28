@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+.add {
+    padding: 30px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+.container {
+    max-width: 1000px;
+    margin: 5px auto;
+}
+.row {
+    width: 100%;
+    margin-bottom: 3px;
+}
+.table {
+    width: 100%;
+    padding: 20px 0px 0px 50px;
+}
+
+.table>thead>tr>th:first-child{
+    text-align: left;
+    padding-bottom: 10px;
+}
+.btn {
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    border: 1px solid rgb(82, 85, 225);
+    border-radius: 5px;
+    background-image: linear-gradient(to left bottom, rgb(191, 183, 217), rgb(46, 2, 193));
+    color: white;
+    cursor: pointer;
+    box-shadow:  rgb(24, 0, 105);
+}
+.btn:hover{
+    background-image: linear-gradient(to right bottom, rgb(96, 78, 156), rgb(29, 4, 112));
+}
+.input {
+    padding: 3px;
+    width: 890px;
+}
+#editProduct {
+    width: 100%;
+    padding: 20px 0px 0px 50px;
+}
+.d-none {
+    display: none;
+}
+#countProduct {
+    color: rgb(9, 9, 154);
+}
+.table>tbody>tr>td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
