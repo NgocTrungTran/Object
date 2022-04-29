@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT Xay dung lop mo ta Temperature</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    let Temperature = function (temp) {
+        if (temp > -273) {
+            this.temp = temp;
+
+            this.getTeam = function () {
+                return this.temp;
+            }
+            this.getfromCToF = function () {
+                return this.temp * 1.8 + 32;
+            }
+            this.getfromCToK = function () {
+                return this.temp + 273.15;
+            }
+        }
+    }
+    let temperature = new Temperature(0);
+    let CtoF = temperature.getfromCToF();
+    let CtoK = temperature.getfromCToK();
+    document.write(`Doi sang do F = ${CtoF}<br>Doi sang do K = ${CtoK}`);
+</script>
