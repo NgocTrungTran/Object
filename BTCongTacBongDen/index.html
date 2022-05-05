@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT Cong Tac Va Bong Den</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let SwitchButton = function () {
+        this.connectToLamp = function () {
+            if (switchOn) {
+                return turnOn;
+            } else {
+                return turnOff;
+            }
+        }
+        this.setTurnOn = function (switchOn) {
+            this.switchOn = switchOn;
+        }
+        this.setTurnOff = function (switchOff) {
+            this.switchOff = switchOff;
+        }       
+    }
+
+    let ElectricLamp = function() {
+        this.turnOn = function (turnOn) {
+            this.turnOn = turnOn;
+        }
+        this.turnOff = function (turnOff) {
+            this.turnOff = turnOff;
+        }
+    }
+</script>
